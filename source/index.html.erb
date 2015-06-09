@@ -2,16 +2,24 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<div class="welcome text-center padded">
+<div class="welcome text-center">
   <!-- Banner -->
-  <div id="banner">
-  <h1>Styl.us</h1>
-    <p>Turn your pen into your best friend</p>
-    <p>Make every line you write count</p>
-    <%= link_to "Stylus", "#", class: "btn btn-primary" %>
+  <div id="banner" class="window-height smooth-scrollable padded">
+    <div>
+    <h1>Styl.us</h1>
+      <p>Turn your pen into your best friend</p>
+      <p>Make every line you write count</p>
+      <%= link_to "Stylus", "#", class: "btn btn-primary" %>
+    </div>
+    <div class="arrow-container">
+      <a href="#features">
+        <i class="fa fa-angle-down fa-6 pulse scroll-btn">
+        </i>
+      </a>
+    </div>
   </div>
   <!-- Features -->
-  <div id="features">
+  <div id="features" class="window-height smooth-scrollable padded">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-4">
@@ -43,21 +51,33 @@ title: Le Wagon Middleman boilerplate
         </div>
       </div>
     </div>
+    <div class="arrow-container">
+      <a href="#form">
+        <i class="fa fa-angle-down fa-6 pulse scroll-btn">
+        </i>
+      </a>
+    </div>
   </div>
 
   <!-- Form -->
-  <div id="form">
+  <div id="form" class="window-height smooth-scrollable">
     <h2>Get news</h2>
     <p>Leave us your email</p>
     <form action="/" class="form-inline">
       <input type="email" class="form-control" placeholder="enter email here">
-      <input type="submit" value="Subscribe" class="btn btn-primary">
+      <input type="submit" value="Subscribe" class="btn btn-grey">
     </form>
+      <div class="arrow-container">
+        <a href="#map">
+          <i class="fa fa-angle-down fa-6 pulse scroll-btn">
+          </i>
+        </a>
+      </div>
   </div>
 
 
   <!-- Map -->
-  <div id="map" style="width: 100%; height: 400px;"></div>
+  <div id="map" style="width: 100%; height: 80%" class="window-height"></div>
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -79,5 +99,5 @@ title: Le Wagon Middleman boilerplate
     title: "You are here!"
   });
   </script>
-</div><!-- .welcome -->
+</div>
 
